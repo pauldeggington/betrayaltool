@@ -1,0 +1,253 @@
+html {
+	background-color: #121212;
+}
+body {
+	margin: 0px;
+	font-size: 0.7em;
+	letter-spacing: 0.2em;
+}
+.content {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7em;
+	letter-spacing: 0.2em;
+	color: #fff;
+	margin: 0px auto;
+	max-width: 1700px;
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Old versions of Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+.centerContainer {
+	text-align: center;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+@media screen and (max-width: 920px) {
+	.centerContainer {
+		text-align: center;
+		position: relative;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+.categoryContainer {
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+	text-align: center;
+	margin: 0px;
+	color: #fff;
+}
+/* Character Select */
+
+.box {
+	background-color: #fff;
+	position: relative;
+	margin: 10px;
+	border-radius: 5px;
+}
+.box select {
+	background-color: #232323;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border: solid #fff 2px;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 10px #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+	text-align-last: center;
+}
+.box:hover::before {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.box select option {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align-last: center;
+	text-shadow: 0 0 10px #fff;
+}
+.profileBox {
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30vmax;
+	margin-right: 30vmax;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.07);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 920px) {
+	.profileBox {
+		padding: 10px;
+		margin-top: 50px;
+		margin-bottom: 10px;
+		margin-left: 1vmax;
+		margin-right: 1vmax;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.07);
+	}
+}
+#characterPicture1 {
+	max-width: 150px;
+	max-height: 150px;
+	margin-left: 5px;
+	margin-right: 5px;
+	position: relative;
+}
+@media screen and (max-width: 480px) {
+	#characterPicture1 {
+		max-width: 100px;
+		max-height: 100px;
+		margin: 10px auto 10px auto;
+	}
+}
+.Values {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3em;
+	display: inline-block;
+	color: rgb(161, 161, 161);
+	position: relative;
+	top: -40px;
+	text-align: center;
+	text-align-last: center;
+	width: 0%;
+	vertical-align: center;
+}
+.Values1 {
+	left: -40%;
+}
+.Values2 {
+	left: -30%;
+}
+.Values3 {
+	left: -20%;
+}
+.Values4 {
+	left: -10%;
+}
+.Values5 {
+	left: 0%;
+}
+.Values6 {
+	left: 10%;
+}
+.Values7 {
+	left: 20%;
+}
+.Values8 {
+	left: 30%;
+}
+.Values9 {
+	left: 40%;
+}
+.defaultsAttr {
+	color: goldenrod;
+}
+.valuesSelected {
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
+	animation: glow 5s ease-in-out infinite alternate;
+}
+.textPlacementLine {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	text-align-last: center;
+	background: rgba(255, 255, 255, 0.07);
+	height: 5px;
+	outline: none;
+	border-radius: 5px;
+}
+.catslideContainer {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-left: 5vmin;
+	padding-right: 5vmin;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 1vmax;
+	margin-right: 1vmax;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.07);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	position: relative;
+}
+@media screen and (max-width: 480px) {
+	.catslideContainer {
+		padding-top: 5px;
+		padding-bottom: 0px;
+		padding-left: 5vmin;
+		padding-right: 5vmin;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 1vmax;
+		margin-right: 1vmax;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.07);
+		text-align: center;
+		position: relative;
+	}
+}
+.tooltip {
+	cursor: help
+}
+/* The sidebar menu */
+
+.sidenav {
+	height: 100%;
+	/* Full-height: remove this if you want "auto" height */
+	width: 160px;
+	/* Set the width of the sidebar */
+	position: fixed;
+	/* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1;
+	/* Stay on top */
+	top: 0;
+	/* Stay at the top */
+	left: 0;
+	background-color: #111;
+	/* Black */
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 20px;
+}
+/* @media (prefers-color-scheme: light){ 
+ {
+
+  }
+} */
