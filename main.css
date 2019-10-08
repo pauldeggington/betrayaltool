@@ -100,7 +100,7 @@ h2 {
 }
 .profileBox {
 	padding: 10px;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 30vmax;
 	margin-right: 30vmax;
@@ -111,7 +111,7 @@ h2 {
 @media screen and (max-width: 920px) {
 	.profileBox {
 		padding: 10px;
-		margin-top: 50px;
+		margin-top: 20px;
 		margin-bottom: 10px;
 		margin-left: 1vmax;
 		margin-right: 1vmax;
@@ -228,24 +228,64 @@ h2 {
 }
 /* The sidebar menu */
 
-.sidenav {
-	height: 100%;
-	/* Full-height: remove this if you want "auto" height */
-	width: 160px;
-	/* Set the width of the sidebar */
-	position: fixed;
-	/* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1;
-	/* Stay on top */
-	top: 0;
-	/* Stay at the top */
-	left: 0;
-	background-color: #111;
-	/* Black */
-	overflow-x: hidden;
-	/* Disable horizontal scroll */
-	padding-top: 20px;
+
+
+.topNav {
+	overflow: hidden;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.07);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 0 0 5px 5px;
 }
+.topNav a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	vertical-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .topNav a:hover {
+	background-color: #fff;
+	color: black;
+  }
+  
+  .topNav .icon {
+	display: none;
+  }
+
+.topNav .icon {
+	display: none;
+  }
+  
+  @media screen and (max-width: 420px) {
+	.topNav a:not(:first-child) {display: none;}
+	.topNav a.icon {
+	  float: right;
+	  display: block;
+	}
+  }
+  
+  @media screen and (max-width: 420px) {
+	.topNav.responsive {position: relative;}
+	.topNav.responsive .icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topNav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  }
+
+
 /* @media (prefers-color-scheme: light){ 
  {
 
