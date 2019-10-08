@@ -231,11 +231,15 @@ h2 {
 
 
 .topNav {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 1vmax;
+	margin-right: 1vmax;
 	overflow: hidden;
 	height: 40px;
 	background-color: rgba(255, 255, 255, 0.07);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 0 0 5px 5px;
+	border-radius: 5px;
 }
 .topNav a {
 	font-family: 'Open Sans', sans-serif;
@@ -245,7 +249,7 @@ h2 {
 	color: #fff;
 	text-align: center;
 	vertical-align: center;
-	padding: 10px 16px;
+	padding: 9px 16px;
 	text-decoration: none;
 	font-size: 17px;
   }
