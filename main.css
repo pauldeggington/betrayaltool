@@ -64,6 +64,15 @@ body {
 	margin-right: 0px;
 }
 
+h1 {
+	font-family: 'xerox', sans-serif;
+	font-weight: lighter;
+	font-size: 4em;
+	text-align: center;
+	margin: 0px;
+	color: #fff;
+}
+
 h2 {
 	font-family: 'xerox', sans-serif;
 	font-weight: normal;
@@ -123,15 +132,17 @@ h2 {
 	margin-left: 30vmax;
 	margin-right: 30vmax;
 	overflow: hidden;
-	height: 80px;
+	height: 170px;
 	background-color: rgba(255, 255, 255, 0.07);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .betrayalLogo {
+	margin: 0 auto 0 auto;
 	width: 300px;
 	height: auto;
 	padding: 10px 0 10px 0;
