@@ -1,11 +1,18 @@
 html {
 	background-color: #121212;
 }
+
 body {
 	margin: 0px;
 	font-size: 0.7em;
 	letter-spacing: 0.2em;
 }
+
+@font-face {
+	font-family: 'xerox';
+	src: url('xerox_working_copy.ttf') format('truetype');
+}
+
 .content {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.7em;
@@ -27,14 +34,16 @@ body {
 	/* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
+
 .centerContainer {
 	text-align: center;
 	position: relative;
 	margin-top: 10px;
 	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 0;
+	margin-right: 0;
 }
+
 @media screen and (max-width: 920px) {
 	.centerContainer {
 		text-align: center;
@@ -45,6 +54,7 @@ body {
 		margin-right: 0px;
 	}
 }
+
 .categoryContainer {
 	font-size: 1.5em;
 	text-align: center;
@@ -53,13 +63,16 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
 h2 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'xerox', sans-serif;
+	font-weight: normal;
 	font-size: 2em;
 	text-align: center;
 	margin: 0px;
 	color: #fff;
 }
+
 /* Character Select */
 
 .box {
@@ -68,10 +81,11 @@ h2 {
 	margin: 10px;
 	border-radius: 5px;
 }
+
 .box select {
 	background-color: #232323;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-family: 'xerox', sans-serif;
+	font-weight: normal;
 	border: solid #fff 2px;
 	color: rgb(255, 255, 255);
 	text-shadow: 0 0 10px #fff;
@@ -88,16 +102,41 @@ h2 {
 	height: auto;
 	text-align-last: center;
 }
+
 .box:hover::before {
 	color: rgba(255, 255, 255, 0.6);
 	background-color: rgba(255, 255, 255, 0.2);
 }
+
 .box select option {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-family: 'xerox', sans-serif;
+	font-weight: normal;
 	text-align-last: center;
 	text-shadow: 0 0 10px #fff;
 }
+
+/* Header */
+
+.header {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30vmax;
+	margin-right: 30vmax;
+	overflow: hidden;
+	height: 80px;
+	background-color: rgba(255, 255, 255, 0.07);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.betrayalLogo {
+	width: 300px;
+	height: auto;
+	padding: 10px 0 10px 0;
+}
+
 .profileBox {
 	padding: 10px;
 	margin-top: 20px;
@@ -108,6 +147,7 @@ h2 {
 	background-color: rgba(255, 255, 255, 0.07);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 @media screen and (max-width: 920px) {
 	.profileBox {
 		padding: 10px;
@@ -118,7 +158,18 @@ h2 {
 		border-radius: 5px;
 		background-color: rgba(255, 255, 255, 0.07);
 	}
+
+	.header {
+		padding: 10px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-left: 1vmax;
+		margin-right: 1vmax;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.07);
+	}
 }
+
 #characterPicture1 {
 	max-width: 150px;
 	max-height: 150px;
@@ -126,6 +177,7 @@ h2 {
 	margin-right: 5px;
 	position: relative;
 }
+
 @media screen and (max-width: 480px) {
 	#characterPicture1 {
 		max-width: 100px;
@@ -133,9 +185,10 @@ h2 {
 		margin: 10px auto 10px auto;
 	}
 }
+
 .Values {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-family: 'xerox', sans-serif;
+	font-weight: normal;
 	font-size: 3em;
 	display: inline-block;
 	color: rgb(161, 161, 161);
@@ -146,41 +199,53 @@ h2 {
 	width: 0%;
 	vertical-align: center;
 }
+
 .Values1 {
 	left: -40%;
 }
+
 .Values2 {
 	left: -30%;
 }
+
 .Values3 {
 	left: -20%;
 }
+
 .Values4 {
 	left: -10%;
 }
+
 .Values5 {
 	left: 0%;
 }
+
 .Values6 {
 	left: 10%;
 }
+
 .Values7 {
 	left: 20%;
 }
+
 .Values8 {
 	left: 30%;
 }
+
 .Values9 {
 	left: 40%;
 }
+
 .defaultsAttr {
 	color: goldenrod;
 }
+
 .valuesSelected {
 	color: #fff;
 	text-shadow: 0 0 10px #fff;
 	animation: glow 5s ease-in-out infinite alternate;
 }
+
 .textPlacementLine {
 	margin-top: 40px;
 	margin-bottom: 20px;
@@ -192,6 +257,7 @@ h2 {
 	outline: none;
 	border-radius: 5px;
 }
+
 .catslideContainer {
 	padding-top: 5px;
 	padding-bottom: 0px;
@@ -207,6 +273,9 @@ h2 {
 	text-align: center;
 	position: relative;
 }
+
+
+
 @media screen and (max-width: 480px) {
 	.catslideContainer {
 		padding-top: 5px;
@@ -223,12 +292,15 @@ h2 {
 		position: relative;
 	}
 }
+
 .tooltip {
 	cursor: help
 }
+
+
+
+
 /* The sidebar menu */
-
-
 
 .topNav {
 	margin-top: 10px;
@@ -241,9 +313,10 @@ h2 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 }
+
 .topNav a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-family: 'xerox', sans-serif;
+	font-weight: normal;
 	float: left;
 	display: block;
 	color: #fff;
@@ -252,60 +325,64 @@ h2 {
 	padding: 9px 16px;
 	text-decoration: none;
 	font-size: 17px;
-  }
-  
-  .topNav a:hover {
+}
+
+.topNav a:hover {
 	background-color: #fff;
 	color: black;
 	border-radius: 5px;
-  }
-  
-  .topNav .icon {
-	display: none;
-  }
+}
 
 .topNav .icon {
 	display: none;
-  }
-  
-  @media screen and (max-width: 420px) {
-	.topNav a:not(:first-child) {display: none;}
+}
+
+.topNav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 420px) {
+	.topNav a:not(:first-child) {
+		display: none;
+	}
+
 	.topNav a.icon {
-	  float: right;
-	  display: block;
+		float: right;
+		display: block;
 	}
-  }
-  
-  @media screen and (max-width: 420px) {
-	.topNav.responsive {position: relative;}
+}
+
+@media screen and (max-width: 420px) {
+	.topNav.responsive {
+		position: relative;
+	}
+
 	.topNav.responsive .icon {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
+
 	.topNav.responsive a {
-	  float: none;
-	  display: block;
-	  text-align: left;
+		float: none;
+		display: block;
+		text-align: left;
 	}
-  }
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
 	width: 15px;
-  }
-  ::-webkit-scrollbar-track {
-	background: #121212; 
-  }
-  ::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.07); 
-  }
+}
+
+::-webkit-scrollbar-track {
+	background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.07);
+}
+
 ::-webkit-scrollbar-thumb:hover {
-	background: #555; 
-  }
-
-/* @media (prefers-color-scheme: light){ 
- {
-
-  }
-} */
+	background: #555;
+}
